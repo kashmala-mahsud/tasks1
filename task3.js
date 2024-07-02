@@ -40,14 +40,23 @@ console.log(students.every(checkedGrades));
 // +++++++++++++++++++++++++++++ Question 4 +++++++++++++++++++++++++++ 
 
 
-let newGrade= new Array(students.length).fill({grade: 100});
-const newVar= students.map((student, index) => ({
+// let newGrade= new Array(students.length).fill({grade: 100});
+// const newVar= students.map((student, index) => ({
 
-        ...student,
-        grade: newGrade[index].grade
+//         ...student,
+//         grade: newGrade[index].grade
     
-}));console.log(students);
-console.log(newVar);
+// }));console.log(students);
+// console.log(newVar);
+// let grades=students.map(({grade}) => students.grade).fill(100);
+// let stdList= students.map((student, index) =>( {
+//     name:student.name ,
+//     grade: grades[index]
+// }));
+
+// console.log(stdList);
+
+
 
 
 // +++++++++++++++++++++++++++++ Question 5 +++++++++++++++++++++++++++ 
@@ -127,4 +136,5 @@ console.log(students);
 let totalGrade=students.map((stdName) => {
     return stdName.grade;
 }).reduce((acc, curr) => acc + curr);
-console.log(totalGrade);
+let avg= totalGrade/students.length;
+console.log(avg.toFixed(2));
