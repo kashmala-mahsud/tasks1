@@ -1,0 +1,9 @@
+th , td {
+    height: 80px;
+    width: 80px;
+    font-size: 20px;
+}
+tbody {
+   height: 100px;
+   width: 100px;
+}
